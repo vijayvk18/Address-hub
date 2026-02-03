@@ -320,7 +320,3 @@ The easiest way to test the API is using the interactive Swagger UI:
 - ✅ RESTful API design principles
 - ✅ Distance calculation using Haversine formula (accurate for Earth's surface)
 - ✅ Router-based organization for scalability
-
-## License
-
-This project is created as a demonstration of FastAPI skills.
