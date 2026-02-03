@@ -31,5 +31,3 @@ class Address(Base):
     latitude = Column(Float, nullable=False)
     longitude = Column(Float, nullable=False)
 
-    def __repr__(self):
-        return f"<Address(id={self.id}, street='{self.street}', city='{self.city}')>"
