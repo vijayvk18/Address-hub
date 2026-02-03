@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 
 # Create FastAPI app
 app = FastAPI(
-    title="Address Book API",
+    title="Address HUb",
     description="A RESTful API for managing addresses with coordinate-based search",
     version="1.0.0",
     docs_url="/docs",
@@ -32,7 +32,7 @@ app.include_router(addresses.router)
 @app.on_event("startup")
 async def startup_event():
     """Initialize database tables on application startup."""
-    logger.info("Starting Address Book API...")
+    logger.info("Starting Address HUb...")
     init_db()
     logger.info("Application started successfully")
 
@@ -40,7 +40,7 @@ async def startup_event():
 @app.get("/", tags=["Root"])
 async def root():
     """Root endpoint providing API information."""
-    return {"message": "Welcome to Address Book API", "docs": "/docs", "redoc": "/redoc"}
+    return {"message": "Welcome to Address HUb", "docs": "/docs", "redoc": "/redoc"}
 
 
 @app.get("/health", tags=["Health"])

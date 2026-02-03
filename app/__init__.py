@@ -1,3 +1,3 @@
 """
-Address Book API Application Package.
+Address HUb Application Package.
 """

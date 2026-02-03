@@ -1,4 +1,4 @@
-# Address Book API
+# Address HUb
 
 A RESTful API application built with FastAPI for managing addresses with coordinate-based search functionality.
 
