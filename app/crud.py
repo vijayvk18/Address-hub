@@ -14,7 +14,7 @@ from app.schemas import AddressCreate, AddressUpdate
 logger = logging.getLogger(__name__)
 
 
-def haversine_distance(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
+def calculate_distance(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
     """
     Calculate the great circle distance between two points on Earth using Haversine formula.
 
@@ -180,7 +180,7 @@ def search_addresses_by_distance(db: Session, latitude: float, longitude: float,
     # Filter addresses by distance
     nearby_addresses = []
     for address in all_addresses:
-        distance = haversine_distance(latitude, longitude, address.latitude, address.longitude)
+        distance = calculate_distance(latitude, longitude, address.latitude, address.longitude)
         if distance <= distance_km:
             nearby_addresses.append(address)
             logger.debug(f"Address ID {address.id} is {distance:.2f}km away " f"(within {distance_km}km)")
