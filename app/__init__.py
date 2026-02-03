@@ -1,3 +1,3 @@
 """
-Address HUb Application Package.
+Address HUB Application Package.
 """

@@ -1,4 +1,4 @@
-# Address HUb
+# Address HUB
 
 A RESTful API application built with FastAPI for managing addresses with coordinate-based search functionality.
 
